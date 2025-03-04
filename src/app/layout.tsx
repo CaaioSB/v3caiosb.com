@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Cabin } from "next/font/google";
 import localFont from "next/font/local"
 import "./globals.css";
 
 const nunito = Nunito({
   variable: "--font-nunito",
+  subsets: ["latin"],
+});
+
+const cabin = Cabin({
+  variable: "--font-cabin",
   subsets: ["latin"],
 });
 
@@ -31,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${unigeo64.variable} antialiased`}
+        className={`${nunito.variable} ${unigeo64.variable} ${cabin} antialiased`}
       >
         {children}
       </body>
