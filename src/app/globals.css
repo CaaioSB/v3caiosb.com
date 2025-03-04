@@ -39,4 +39,6 @@ p {
 
 h1 {
 	font-family: "Unigeo64", serif;
+	font-size: var(--text-5xl);
+	line-height: 1;
 }
