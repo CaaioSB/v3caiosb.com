@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--font-nunito: var(--font-nunito);
+	--font-cabin: var(--font-cabin);
+	--font-unigeo64: var(--font-unigeo64);
 	--shadow-3xl: 3px 3px 0px rgba(0, 0, 0, 1);
 	--shadow-5xl: 5px 5px 0px rgba(0, 0, 0, 1);
 	--transform-move-button: translateY(-2px);
@@ -23,22 +24,24 @@
 body {
 	color: var(--foreground);
 	background: var(--background);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-cabin);
 }
 
 button {
-	font-family: "Nunito", serif;
+	font-family: var(--font-nunito);
 	font-optical-sizing: auto;
 	font-weight: 900;
 	font-style: normal;
 }
 
-p {
-	font-family: Cabin, serif;
+h1 {
+	font-family: var(--font-unigeo64);
+	font-size: var(--text-5xl);
+	line-height: 1;
 }
 
-h1 {
-	font-family: "Unigeo64", serif;
-	font-size: var(--text-5xl);
+h4 {
+	font-family: var(--font-unigeo64);
+	font-size: var(--text-2xl);
 	line-height: 1;
 }
