@@ -1,4 +1,4 @@
-import { Button, Card } from "@/app/components";
+import { Button, Card, Tag } from "@/app/components";
 
 export default function Home() {
 	return (
@@ -49,6 +49,12 @@ export default function Home() {
 					</small>
 				</Card>
 			</div>
+
+			<Tag color="fuchsia" label="8 anos de experiência" />
+			<Tag color="orange" label="8 anos de experiência" />
+			<Tag color="salmon" label="8 anos de experiência" />
+			<Tag color="amber" label="8 anos de experiência" />
+			<Tag color="yellow" label="8 anos de experiência" />
 		</div>
 	);
 }
